@@ -19,7 +19,7 @@ body{
 	text-align: center;
 	align-items: center;
 	background:white;
-	font-size: 0.9rem;
+	font-size: 1 rem;
 	padding: 17px 15px 17px 0px;
 
 }
@@ -163,7 +163,7 @@ body{
 	}
 
 	.menu-principal__opciones li:hover{
-		background: #4d6fb1;
+		background: #2d75e0;
 		border-radius: 0px 50px 50px 0px;
 	}
 
