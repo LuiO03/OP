@@ -18,26 +18,70 @@ body{
 	display: flex;
 	text-align: center;
 	align-items: center;
-	background:#a20000;
+	background:white;
+	font-size: 0.9rem;
+	padding: 17px 15px 17px 0px;
+
 }
 
 .menu-principal__opciones {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	width: 75%;
+	justify-content: flex-end;
+	width: 100%;
 	align-items: center;
 
 }
 
-.menu-principal__logo{
-	width: 25%;
-	padding: 5px 0px 5px 0px;
 
+.menu-principal__escudo{
+	margin: 75px 0px 0px 15px;
+	width: 13%;
+	height: 120px;
+	position: absolute;
+	background-color: #060643;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	padding: 0px;
+	justify-content: center;
+	box-shadow: 5px 5px 5px black
 }
 
-.menu-principal__logo img{
-	width: 150px;
+.menu-principal__escudo__logo{
+	width: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.menu-principal__escudo__logo img{
+	width: 100%;
+}
+
+
+.municipalidad{
+	color: white;
+	font-size: 0.6rem;
+	text-align: center;
+}
+
+.distrito{
+	color: white;
+	font-weight: bold;
+	font-size: 0.7rem;
+}
+
+.gestion{
+	background-color: white;
+	color: #005ED4;
+	font-size: 0.59rem;
+	border-radius: 5px;
+	justify-content: center;
+	padding: 3px;
+	margin: 5px;
 }
 
 .menu__opcion {
@@ -47,8 +91,8 @@ body{
 
 .menu__opcion a{
 	text-decoration:none;
-	color: papayawhip;
-	font-weight: bolder;
+	color: black;
+	font-weight: 600;
 }
 
 .menu-btn{
@@ -62,57 +106,69 @@ body{
 
 
 .menu-principal__opciones li:hover{
-	background: #202020;
-	border-radius: 5px;
-	
+	background: #acc2ed;
+	border-radius: 50px;	
 }
 
 .contenedor-slogan{
 	display: flex;
 	margin: auto;
 	width: 100%;
-	background: url("../Images/fondo.jpeg")no-repeat center center/cover;
+	background: url("../Images/fondo.jpg")no-repeat center center/cover;
 	height: 480px;
-	
-
 	align-items: flex-end;
 }
 
 .slogan{
 	width: 100%;
 	text-align: center;
-	padding: 20px;
-	background-color: rgba(0, 0, 0, 0.5);
+	padding: 15px;
+	background-color: rgba(0, 0, 0, 0.6);
 	align-items: center;
-	color: #e2c372;
+	color: white;
+	font-size: 50px;
+	border-radius: 10px 10px 0px 0px;
 }
 
 @media screen and (max-width: 840px) {
 
 	.menu-btn{
 		right: 3.5em;
-		color: #e2c372;
+		color: #354672;
 	}
 
-	.menu-principal__logo{
-		position: relative;
+	.menu-principal__escudo{
+		width: 17%;
 	}
 
+	.menu-principal {
+		padding: 36px 15px 36px 0px;
+	}
 
 	.menu-principal__opciones{
 		display: block;
-		background-color:#950525;
+		background-color:#242526;
 		position: absolute;
 		left: 0px;
 		top: 0px;
-		width: 35%;
+		width: 40%;
 		height: 100%;
 		opacity: 0.92;
-		border-right: #e2c372 1px solid;
+		padding: 0px 0px 0px 10px;
+		border-right: #4d6fb1 2px solid;
 		transform: translate(-500px);
 		transition: transform 0.8s ease-in-out;
 		text-align: left;
 		align-items: center;
+	}
+
+	.menu-principal__opciones li:hover{
+		background: #4d6fb1;
+		border-radius: 0px 50px 50px 0px;
+	}
+
+	.menu__opcion a{
+		color: whitesmoke;
 	}
 
 	.menu__opcion {
@@ -129,5 +185,11 @@ body{
 	.menu-principal__opciones.show{
 		transform: translate(0px);
 		transition: transform 0.8s ease-in-out;
+	}
+}
+
+@media (max-width: 640px){
+	.menu-principal__escudo{
+		width: 20%;
 	}
 }
