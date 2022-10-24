@@ -18,21 +18,17 @@ body{
 	display: flex;
 	text-align: center;
 	align-items: center;
-	background:whitesmoke;
+	background: #e7bb27;
 	font-size: 1 rem;
 	padding: 17px 15px 17px 0px;
-
 }
 
 .menu-principal__opciones {
 	display: flex;
-	flex-direction: row;
 	justify-content: flex-end;
 	width: 100%;
 	align-items: center;
-
 }
-
 
 .menu-principal__escudo{
 	margin: 75px 0px 0px 15px;
@@ -47,7 +43,9 @@ body{
 	align-items: center;
 	padding: 0px;
 	justify-content: center;
-	box-shadow: 5px 5px 5px black
+	box-shadow: 5px 5px 5px black;
+	z-index: 1;
+
 }
 
 .menu-principal__escudo__logo{
@@ -55,6 +53,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
 }
 
 .menu-principal__escudo__logo img{
@@ -66,6 +65,7 @@ body{
 	color: white;
 	font-size: 0.6rem;
 	text-align: center;
+
 }
 
 .distrito{
@@ -85,8 +85,9 @@ body{
 }
 
 .menu__opcion {
-	padding: 10px;
+	padding: 15px;
 	list-style: none;
+	border: 1px rgba(0, 0, 0, 0) solid;
 }
 
 .menu__opcion a{
@@ -98,16 +99,17 @@ body{
 .menu-btn{
 	position: absolute;
 	cursor: pointer;
-	right: 2.5em;
-	color: rgba(0, 0, 0, 0);
 	top: 1em;
-	padding: 5px 0px 5px 0px;
+	right: 3em;
+	opacity: 0;
+	padding: 10px 15px 10px 15px;
 }
 
-
-.menu-principal__opciones li:hover{
-	background: #e7bb27;
-	border-radius: 50px;	
+.menu__opcion:hover{
+	background-color: rgba(231, 231, 255, 0.5);
+	border-radius: 10px;
+	color: white;
+	border-bottom: 1px white solid;
 }
 
 .contenedor-slogan{
@@ -132,28 +134,39 @@ body{
 @media screen and (max-width: 840px) {
 
 	.menu-btn{
-		right: 3.5em;
+		opacity: 100;
 		color: #354672;
 	}
 
+	.menu-btn:hover{
+		background-color: rgba(231, 231, 255, 0.5);
+		border-radius: 10px;
+		border-bottom: 1px white solid;
+		color: black;
+	}
+
 	.menu-principal__escudo{
-		width: 17%;
+		width: 32%;
 	}
 
 	.menu-principal {
-		padding: 36px 15px 36px 0px;
+		padding: 42px 15px 42px 0px;
+	}
+
+	.menu__opcion{
+		border-left: 3px rgba(0, 0, 0, 0) solid;
 	}
 
 	.menu-principal__opciones{
 		display: block;
 		background-color:#242526;
-		position: absolute;
+		position: fixed;
 		left: 0px;
 		top: 0px;
 		width: 50%;
 		height: 100%;
 		opacity: 0.92;
-		padding: 0px 0px 0px 10px;
+		padding: 160px 0px 0px 10px;
 		border-right: #4d6fb1 2px solid;
 		transform: translate(-500px);
 		transition: transform 0.8s ease-in-out;
@@ -161,9 +174,16 @@ body{
 		align-items: center;
 	}
 
-	.menu-principal__opciones li:hover{
-		background: #2d75e0;
+	.menu-principal__opciones.show{
+		transform: translate(0px);
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.menu__opcion:hover{
+		background: #1547cc;
 		border-radius: 0px 50px 50px 0px;
+		border-left: 3px #e7bb27 solid;
+		border-bottom: 1px rgba(0, 0, 0, 0) solid;
 	}
 
 	.menu__opcion a{
@@ -180,14 +200,16 @@ body{
 		height: 0.01;
 	}
 
-
-	.menu-principal__opciones.show{
-		transform: translate(0px);
-		transition: transform 0.8s ease-in-out;
-	}
+	
 }
 
 @media (max-width: 640px){
+
+	.menu-btn{
+		top: 1em;
+		right: 2em;
+	}
+
 	.menu-principal__escudo{
 		width: 32%;
 	}
