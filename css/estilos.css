@@ -1,0 +1,312 @@
+
+
+.contenedor-slogan{
+	display: flex;
+	margin: auto;
+	width: 100%;
+	background: url("../imagen/fondo.jpg")no-repeat center center/cover;
+	height: 400px;
+	align-items: flex-end;
+	
+}
+
+.slogan{
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+	backdrop-filter: blur(1px);
+	background: rgba(0, 0, 0, 0.5);
+	align-items: center;
+	color: #f3c516;
+	font-size: 47px;
+	text-shadow: 5px 5px 5px black;
+}
+
+
+
+main{
+	background: whitesmoke;
+}
+
+.cuerpo__contenedor{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin: 25px 30px 25px 30px;
+}
+
+.cuerpo__descripcion{
+	background: whitesmoke;
+	padding: 20px;
+}
+
+.cuerpo__logo img{
+	width: 150px;
+}
+
+
+
+.cuerpo__logo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.cuerpo__titulo{
+	font-size: 33PX;
+	padding: 10px;
+}
+
+.cuerpo__parrafo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border: solid 4px #f3c516;
+	border-radius: 10px;
+}
+
+.cuerpo__parrafo p{
+	padding: 10px;
+}
+
+.categoria h1{
+	padding: 20px;
+	font-size: 35px;
+}
+
+
+.alcalde{
+	padding: 20px 60px;
+}
+
+.alcalde__imagen h2{
+	padding: 10px;
+}
+
+.alcalde__imagen img{
+	width: 50%;
+	border-radius: 200px;
+	border: white solid 1px;
+}
+
+.alcalde__presentacion{
+	padding: 20px;
+	text-align: justify;
+	background: #e7bb27;
+	border: black solid 1px;
+	box-shadow: 5px 5px 5px gray;
+}
+
+.alcalde__presentacion p{
+	padding: 5px;
+}
+
+
+.metas__contenedor{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 10px 50px;
+}
+
+.metas{
+	margin: 10px;
+}
+
+.metas__texto{
+
+	padding: 20px;
+	text-align: justify;
+	background: #e7bb27;
+	border: black solid 1px;
+	box-shadow: 5px 5px 5px gray;
+}
+
+
+.eventos{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	background: whitesmoke;
+	padding: 30px 10px;
+}
+
+.eventos__imagen {
+	padding: 10px;
+}
+
+.eventos__imagen img{
+	width: 100%;
+	height: 400px;
+}
+
+
+
+
+.categoria__contenedor{
+	width: 100%;
+	padding: 30px 0px 30px 0px;
+
+}
+
+.categoria__elemento{
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	padding: 20px 40px;
+	grid-gap: 20px;
+
+}
+
+.categoria__elemento--par{
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	padding: 20px 40px;
+	grid-gap: 20px;
+}
+
+.categoria__parrafo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	background: #f3c516;
+	border: black solid 4px;
+	font-size: 17px;
+	color: #060643;
+	box-shadow: 5px 5px 5px gray;	
+}
+
+.categoria__imagen1, .categoria__imagen2, .categoria__imagen3, .categoria__imagen4,.categoria__imagen5, .categoria__imagen6{
+	box-shadow: 5px 5px 5px gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: black solid 1px;
+	
+}
+
+.categoria__imagen1{
+	background: url("../imagen/historia.png")no-repeat center center/cover;
+}
+
+.categoria__imagen2{
+	background: url("../imagen/obras.jpg")no-repeat center center/cover;
+}
+
+.categoria__imagen3{
+	background: url("../imagen/noticia.jpg")no-repeat center center/cover;
+}
+
+.categoria__imagen4{
+	background: url("../imagen/servicios.png")no-repeat center center/cover;
+}
+
+.categoria__imagen5{
+	background: url("../imagen/turismo.jpg")no-repeat center center/cover;
+}
+
+.categoria__imagen6{
+	background: url("../imagen/contactos.jpg")no-repeat center center/cover;
+}
+
+.categoria__simbolo{
+	padding: 10px;
+}
+
+.categoria__simbolo:hover{
+	width: 100%;
+	backdrop-filter: blur(4px);
+	background: rgba(5, 5, 5, 0.5);
+	
+}
+
+.categoria__icon a{
+	text-decoration:none;
+	font-size: 4em;
+	color: #ED9A00;
+}
+
+.categoria__icon i{
+	background: #060643;
+	padding: 15px;
+	border-radius: 50px;
+	width: 120px;
+}
+
+.categoria__texto{
+	padding-top: 10px;
+	color: white;
+	text-shadow: 0px 0px 5px black;
+	font-size: 23px;
+}
+
+
+
+@media (max-width: 840px){
+	.categoria__elemento{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.categoria__elemento--par{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.alcalde__imagen img{
+		width: 70%;
+	}
+
+	.slogan{
+		font-size: 40px;	
+	}
+}
+
+@media screen and (max-width: 640px){
+
+	.slogan{
+		font-size: 33px;	
+	}
+
+	.metas__contenedor{
+		grid-template-columns: repeat(1, 1fr);
+		padding: 10px 10px;
+
+	}
+
+	.alcalde{
+		padding: 20px;
+	}
+
+	.alcalde__imagen img{
+		width: 100%;
+	}
+
+	.eventos{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.eventos__imagen img{
+		height: 250px;
+		width: 80%;
+	}
+
+	.categoria__elemento{
+		grid-template-columns: repeat(1, 1fr);
+		padding: 20px;
+	}
+	.categoria__elemento--par{
+		grid-template-columns: repeat(1, 1fr);
+		padding: 20px;
+	}
+
+	.cuerpo__contenedor{
+		grid-template-columns: 1fr;
+	}
+
+	.categoria__parrafo{
+		position: absolute;
+		width: 0px;
+		opacity: 0;
+	}
+	
+}

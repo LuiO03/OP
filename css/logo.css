@@ -1,0 +1,68 @@
+
+.menu-principal__escudo{
+	margin: 75px 0px 0px 25px;
+	width: 150px;
+	height: 120px;
+	position: absolute;
+	background-color: #060643;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	padding: 0px;
+	justify-content: center;
+	box-shadow: 5px 5px 5px black;
+	text-decoration:none;
+}
+
+.menu-principal__escudo__logo{
+	width: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.menu-principal__escudo__logo img{
+	width: 100%;
+}
+
+
+.municipalidad{
+	color: white;
+	font-size: 0.6rem;
+	text-align: center;
+
+}
+
+.distrito{
+	color: white;
+	font-weight: bold;
+	font-size: 0.7rem;
+}
+
+.gestion{
+	background-color: #e7bb27;
+	color: black;
+	font-size: 0.59rem;
+	border-radius: 5px;
+	justify-content: center;
+	padding: 3px;
+	margin: 5px;
+}
+
+
+
+@media (max-width: 640px){
+	.municipalidad{
+		font-size: 0.45rem;
+	}
+	.ciudad{
+		font-size: 0.55rem;
+	}
+	.gestion{
+		font-size: 0.5rem;
+	}
+	}	
+}
