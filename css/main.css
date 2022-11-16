@@ -3,15 +3,11 @@
 	padding: 0;
 }
 
-main h1{
-	text-align: center;
-
-}
-
 main{
 	background: #78bbfd;
 	border-top: 1px solid black;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
+	text-align: center;
 }
 
 .autor{
@@ -21,6 +17,7 @@ main{
 
 .autor p{
 	margin:10px;
+	color: #78bbfd;
 }
 
 hr{
@@ -41,7 +38,7 @@ hr{
 	width: 100%;
 	padding: 10px 0px;
     font-size: 2em;
-    color: white;
+    color: #f3c516;
     box-shadow: 2px 5px 5px black;
     text-align: center;
     background: rgb(6,6,67);

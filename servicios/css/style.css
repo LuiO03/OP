@@ -1,3 +1,7 @@
+.inicio{
+    background: whitesmoke;
+}
+
 .contenedor-slogan{
     background: url(../imagenes/servicios.jpg) no-repeat center center/cover;
 }
@@ -10,7 +14,7 @@
 }
 
 .fondo_elemento{
-    background: #f3c516;
+    background: whitesmoke;
     padding: 10PX;
     border-radius: 10px;
     border: 1px solid black;

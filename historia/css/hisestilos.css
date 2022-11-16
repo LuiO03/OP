@@ -1,3 +1,8 @@
+main{
+	padding-bottom: 0px;
+	
+}
+
 .contenedor-slogan{
 	background: url(../imagen/danza.jpg) no-repeat center center/cover;
 }
@@ -108,7 +113,7 @@
 	margin: 0px;
 	justify-content: center;
 	border-top: 1px black solid;
-	border-bottom: 1px black solid;
+	
 	background: white;
 	text-align: justify;
 }

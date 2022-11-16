@@ -1,5 +1,11 @@
 .contenedor-slogan{
-	background: url(../imagen/contactos.jpg) no-repeat center center/cover;
+	background: url(../imagen/contactos.png) no-repeat center center/cover;
+}
+
+
+.direccion{
+	background: whitesmoke;
+	padding: 15px 0px;
 }
 
 .cuerpo{
@@ -11,10 +17,9 @@
 	width: 70%;
 	text-align: center;
 	margin: 20px auto;
-	color: black;
+	color: white;
 	border: 1px black solid;
-	background: #f3c516;
-	border: 1px solid black;
+	background: #060643;
 	padding: 20px;
 }
 
@@ -24,13 +29,14 @@
 }
 
 .muni{
-	margin: 10px auto;
+	margin: 0px auto;
 }
 
 .muni img{
-	width: 30%;
-	border: solid black 1px;
-	border-radius: 250px;
+	width: 80%;
+	max-width: 630px;
+	border: 2px #071822 solid;
+	border-radius: 10px 10px 0px 0px;
 	box-shadow: 3px 3px 15px grey;
 }
 
@@ -38,14 +44,14 @@
 .ubicacion{
 	border: 2px #071822 solid;
 	box-shadow: 3px 3px 15px grey;
-	color: black;
-	padding: 10px;
+	color: #f3c516;
+	padding: 0px 10px;
 	width: 80%;
 	max-width: 630px;
-	margin: 50px auto 50px auto;
+	margin: 0px auto 40px auto;
 	align-items: center;
-	border-radius: 10px;
-	background-color: white;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #060643;
 }
 
 .ubicacion__contenedor{
@@ -80,13 +86,13 @@
 }
 
 .cuerpo__mapa{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
-	background-color: #f3c516;
-	margin: 30px 0px 30px 0px;
-	color: black;
-	padding: 10px 0px 10px 0px;
-	border-top: solid 1px black;
-	border-bottom: solid 1px black;
+	background-color: black;
+	color: whitesmoke;
+	height: 550px;
 }
 
 iframe{
@@ -152,7 +158,7 @@ iframe{
 	margin: 20px auto 35px auto;
 	width: 90%;
 	padding: 10px 30px 10px 20px;
-	background-color: rgba(243, 197, 22, 0.9);
+	background-color: #060643;
 	box-sizing: border-box;
 	align-items: center;
 	box-shadow: 3px 3px 15px grey;
