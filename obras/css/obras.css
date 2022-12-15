@@ -25,16 +25,16 @@
   flex-direction: column;
   border: solid black 1px;
   box-shadow: 5px 5px 5px gray;
+  background:#060643;
 }
 
 .noticia__titulo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding: 15px;
   background-color: white;
-  background: #f3c516;
+  background: #f1bd00;
   color: #060643;
   border-radius: 10px 10px 0px 0px;
   font-size: 16px;
@@ -72,6 +72,10 @@
   }
   .noticias_subtitulo {
     font-size: 2em;
+  }
+
+  .noticia__descripcion {
+    
   }
 
  

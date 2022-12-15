@@ -191,14 +191,11 @@ textarea{
 
 @media (max-width: 840px){
 
+
 	.sede__contenedor{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		margin: 10px 0px 10px 0px;
-	}
-
-	.muni img{
-		width: 50%;
 	}
 }
 
@@ -209,12 +206,11 @@ textarea{
 	}
 
 	.muni img{
-		width: 70%;
+		width: 90%;
 	}
 
 	.ubicacion{
 		width: 90%;
-		margin: 30px auto;
 }
 
 	.ubicacion div{
